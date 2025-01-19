@@ -62,5 +62,12 @@ export const productSchema = defineType({
         ],
       },
     },
+    {
+      name: "inCart", // New field for cart tracking
+      title: "In Cart",
+      type: "boolean",
+      initialValue: false, // Default value
+      description: "Mark if the product is currently in the cart",
+    },
   ],
 });

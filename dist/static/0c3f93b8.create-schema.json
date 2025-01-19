@@ -1,0 +1,102 @@
+[
+  {
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Product Title"
+      },
+      {
+        "name": "price",
+        "type": "number"
+      },
+      {
+        "name": "priceWithoutDiscount",
+        "type": "number",
+        "title": "Price without Discount"
+      },
+      {
+        "name": "badge",
+        "type": "string"
+      },
+      {
+        "name": "image",
+        "type": "image",
+        "title": "Product Image"
+      },
+      {
+        "to": [
+          {
+            "type": "categories"
+          }
+        ],
+        "name": "category",
+        "type": "reference"
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "title": "Product Description"
+      },
+      {
+        "name": "inventory",
+        "type": "number",
+        "title": "Inventory Management"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Featured",
+              "value": "featured"
+            },
+            {
+              "title": "Follow products and discounts on Instagram",
+              "value": "instagram"
+            },
+            {
+              "title": "Gallery",
+              "value": "gallery"
+            }
+          ]
+        },
+        "of": [
+          {
+            "type": "string"
+          }
+        ],
+        "name": "tags",
+        "type": "array"
+      },
+      {
+        "initialValue": false,
+        "description": "Mark if the product is currently in the cart",
+        "name": "inCart",
+        "type": "boolean"
+      }
+    ],
+    "name": "products",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Category Title"
+      },
+      {
+        "name": "image",
+        "type": "image",
+        "title": "Category Image"
+      },
+      {
+        "name": "products",
+        "type": "number",
+        "title": "Number of Products"
+      }
+    ],
+    "name": "categories",
+    "type": "document"
+  }
+]
