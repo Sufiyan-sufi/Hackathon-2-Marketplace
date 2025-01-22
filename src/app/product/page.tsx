@@ -1,5 +1,5 @@
 // All Products Page (pages/products/page.tsx)
-"use client";
+// "use client";
 
 import { client } from "@/sanity/lib/client"; // Import Sanity client
 import Link from "next/link";
@@ -22,7 +22,7 @@ const ProductsPage = async () => {
       <div className="grid grid-cols-4 gap-6">
         {products.map((product: any) => (
           <div key={product._id} className="card">
-            <Link href={`/products/${product._id}`}>
+            <Link href={`/singleproduct/${product._id}`}>
               <Image
                 src={product.imageUrl}
                 alt={product.title}
