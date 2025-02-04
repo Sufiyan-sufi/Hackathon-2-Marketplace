@@ -19,7 +19,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Hackathon 2",
-  description: "Built by Muhib Raza",
+  description: "Built by Sufyan Ali",
 };
 
 export default function RootLayout({
